@@ -3,80 +3,80 @@
 
 ## Description
 
-*So_long* est un projet de l'école 42 qui consiste à créer un petit jeu vidéo en 2D où un joueur doit collecter des objets, éviter des ennemis et atteindre une sortie pour gagner. Ce projet met l'accent sur la manipulation de fichiers, l'utilisation de bibliothèques graphiques, ainsi que sur la gestion d'événements et de boucles de jeu. Le projet utilise la bibliothèque *minilibx* pour afficher les éléments graphiques.
+*So_long* is a project from 42 school where you are tasked with creating a small 2D video game where a player must collect items, avoid enemies, and reach an exit to win. This project focuses on file manipulation, using graphical libraries, and handling events and game loops. The project uses the *minilibx* library to display graphical elements.
 
-## Objectifs du projet
+## Project Objectives
 
-- Développer un petit jeu en 2D avec des éléments interactifs.
-- Manipuler des fichiers pour générer des cartes (murs, objets, ennemis, etc.).
-- Gérer les événements utilisateur (clavier, fermetures de fenêtre).
-- Apprendre à utiliser une bibliothèque graphique simple.
+- Develop a small interactive 2D game.
+- Manipulate files to generate maps (walls, items, enemies, etc.).
+- Handle user events (keyboard inputs, window closures).
+- Learn to use a simple graphical library.
 
-## Fonctionnalités
+## Features
 
-Le projet inclut les fonctionnalités suivantes :
+The project includes the following features:
 
-### 1. Carte du jeu
+### 1. Game Map
 
-- Le jeu repose sur une carte de type *fichier `.ber`*, qui représente les murs, le sol, les objets à collecter, la position du joueur et la sortie.
-- Les éléments de la carte incluent :
-  - `1`: Mur.
-  - `0`: Sol.
-  - `P`: Position de départ du joueur.
-  - `C`: Objet à collecter.
-  - `E`: Sortie.
+- The game is based on a map file of type `.ber`, which represents walls, floors, collectible items, the player's starting position, and the exit.
+- The map elements include:
+  - `1`: Wall.
+  - `0`: Floor.
+  - `P`: Player's starting position.
+  - `C`: Collectible item.
+  - `E`: Exit.
   
-### 2. Mécanique de jeu
+### 2. Game Mechanics
 
-- Le joueur peut se déplacer dans quatre directions (haut, bas, gauche, droite).
-- Le but est de collecter tous les objets `C` avant de pouvoir accéder à la sortie `E`.
-- Le jeu se termine lorsque le joueur atteint la sortie après avoir ramassé tous les objets.
+- The player can move in four directions (up, down, left, right).
+- The goal is to collect all `C` items before being able to access the exit `E`.
+- The game ends when the player reaches the exit after collecting all the items.
 
-### 3. Graphismes et événements
+### 3. Graphics and Events
 
-- Utilisation de la bibliothèque *minilibx* pour afficher la carte et les mouvements du joueur.
-- Gestion des événements comme les touches du clavier pour le déplacement, et la fermeture de la fenêtre.
+- Use the *minilibx* library to display the map and player's movements.
+- Manage events such as keyboard inputs for movement and window closures.
 
 ## Installation
 
-Pour compiler et exécuter le projet *So_long*, suivez les étapes ci-dessous :
+To compile and run the *So_long* project, follow the steps below:
 
-\`\`\`bash
-git clone https://github.com/votre-repo/so_long.git
+```bash
+git clone https://github.com/your-repo/so_long.git
 cd so_long
 make
-\`\`\`
+```
 
-Ensuite, lancez le jeu avec une carte `.ber` en argument :
+Then, run the game with a `.ber` map file as an argument:
 
-\`\`\`bash
+```bash
 ./so_long maps/map.ber
-\`\`\`
+```
 
 ## Usage
 
-Le jeu se joue avec les touches fléchées pour déplacer le personnage. Vous devez ramasser tous les objets avant de pouvoir atteindre la sortie. Chaque mouvement est comptabilisé, et le nombre de déplacements s'affiche dans le terminal.
+The game is played using the arrow keys to move the character. You must collect all items before reaching the exit. Every movement is counted, and the number of moves is displayed in the terminal.
 
-## Création de Cartes
+## Creating Maps
 
-Les cartes doivent être au format `.ber` et suivre une structure rectangulaire, où chaque élément est représenté par les caractères mentionnés ci-dessus (mur, sol, objets, etc.).
+Maps must be in the `.ber` format and follow a rectangular structure, where each element is represented by the aforementioned characters (wall, floor, items, etc.).
 
-Exemple de carte :
+Example map:
+```
+1111111  
+100C0E1  
+10P0001  
+1111111  
+```
 
-1111111 
+## Testing
 
-100C0E1
-10P0001
-1111111
+You can test different maps by placing them in the `maps` directory and running the program with these maps as an argument.
 
-## Tests
-
-Vous pouvez tester différentes cartes en les plaçant dans le répertoire `maps` et en exécutant le programme avec ces cartes comme argument.
-
-\`\`\`bash
+```bash
 ./so_long maps/map2.ber
-\`\`\`
+```
 
-## Auteur
+## Author
 
-- **Louis** - Étudiant à 42 Lausanne
+- **Louis** - 42 Lausanne Student
