@@ -62,10 +62,14 @@ Le jeu se joue avec les touches fléchées pour déplacer le personnage. Vous de
 Les cartes doivent être au format `.ber` et suivre une structure rectangulaire, où chaque élément est représenté par les caractères mentionnés ci-dessus (mur, sol, objets, etc.).
 
 Exemple de carte :
+
 \`\`\`
 1111111
+
 100C0E1
+
 10P0001
+
 1111111
 \`\`\`
 
