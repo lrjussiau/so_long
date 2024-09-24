@@ -63,15 +63,10 @@ Les cartes doivent être au format `.ber` et suivre une structure rectangulaire,
 
 Exemple de carte :
 
-\`\`\`
 1111111
-
 100C0E1
-
 10P0001
-
 1111111
-\`\`\`
 
 ## Tests
 
